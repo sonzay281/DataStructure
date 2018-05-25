@@ -7,6 +7,7 @@ package com.lfa.datastructure;
 
 import com.lfa.datastructure.util.BinaryTree;
 import com.lfa.datastructure.util.LinkedList;
+import com.lfa.datastructure.util.Stack;
 
 /**
  *
@@ -34,6 +35,21 @@ public class Program {
         tree.add(25);
         tree.add(7);
         tree.print();
+        System.out.println("************ Stack Part ***********\n");
+        Stack stack = new Stack();
+        stack.push(5);
+        stack.push(4);
+        stack.push(6);
+        stack.push(8);
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+       System.out.println(stack.pop());
+        for (int i : stack.all()) {
+            if (i != 0) {
+                System.out.println(i);
+            }
+        }
 
     }
 
